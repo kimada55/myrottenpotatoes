@@ -12,6 +12,7 @@ gem 'haml'
 # gem install ruby-debug-base19x -v 0.11.29
 group :production do 
 	gem 'therubyracer-heroku', :platform => :ruby
+	gem 'pg'
 end 
 
 group :test, :development do
@@ -22,6 +23,7 @@ group :test, :development do
 	gem 'launchy'
 	gem "rspec-rails", "~> 2.0" #MOD KIMADA 3/19/2013
 	gem 'ZenTest' # MOD KIMADA 3/19/2013
+	gem 'sqlite3'
 end 
 
 group :test do
@@ -33,8 +35,6 @@ gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
 
 
 # Gems used only for assets and not required
